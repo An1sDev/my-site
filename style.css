@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navbar {
+    background: #0f0f0f;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__container {
+    display: flex;
+    justify-self: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 2048px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__links {
+    text-decoration: none;
+    color: white;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__links:hover {
+    color: #cc0000;
+    transition: all 0.3s ease;
+}
+
+.navbar__btn {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    height: 60%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #cc0000;
+}
+
+.button:hover {
+  background: #8e00e0ea;
+  transition: all 0.3s ease;
+}
+
+.main {
+    background: #101010;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    max-width: 2048px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: rgb(196, 196, 196);
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    height: 33%;
+    font-size: 16px;
+}
+
+.main__content h1 {
+    padding-top: 15px
+}
+
+.main__content p {
+    padding-bottom: 10px;
+}
+
+.main__content a {
+    color: #fff;
+    padding: 13px;
+    text-decoration: none;
+    background-color: #cc0000;
+    height: 12%;
+    border-radius: 4px;
+}
+
+.main__anime {
+    background: #101010;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__container {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    max-width: 2048px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: rgb(196, 196, 196);
+}
+
+.main__content--anime {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: left;
+    padding: 15px;
+    height: 30%;
+    width: 100%;
+}
+
+.main__anime--card {
+    display: flex;
+    background-color: #131313;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 15px;
+    height: 90%;
+}
+
+.main__anime--card:hover {
+    transform: scale(1.025);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.main__anime--card h1 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.main__anime--card a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.angel{
+    margin: 0 auto; 
+    width: 100%;
+    height: 1100px;
+    background-color: #181818;
+
+}
+
+.angel__container {
+    padding: 15px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 75%;
+    background-color: #141414;
+}
+
+.angel__container h1 {
+    padding: 15px;
+    color: #fff;
+}
+
+.video--wrapper {
+    position: relative;
+    width: 100%;            /* Увеличь ширину до 90% от родителя */
+    max-width: 1280px;     /* Ограничь максимальный размер, например 1280px */
+    padding-top: 56.25%;   /* 16:9 = 9 / 16 = 0.5625 → 56.25% */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.video--wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 80%;
+  border: none;
+}
